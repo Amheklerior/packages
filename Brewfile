@@ -61,6 +61,9 @@ brew "gitleaks"
 brew "fnm"
 brew "go"
 
+# app plist changes monitoring tool (useful in automating app prefs)
+go "github.com/catilac/plistwatch@latest"
+
 
 ######################################################################
 #                             NEOVIM                                 #
