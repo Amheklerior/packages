@@ -35,8 +35,8 @@ brew bundle --global --verbose
 The following commands are useful in keeping things in check.
 
 ```bash
-# check how fare the current system deviates from the Brewfile's defined list
-# NOTE: the --verbose flag will list the items which does not satisfies the Brewfile list
+# check how far the current system deviates from the Brewfile's defined list
+# NOTE: the --verbose flag will list the offending items
 brew bundle check --verbose
 
 # uninstall any package which is NOT listed in the Brewfile
