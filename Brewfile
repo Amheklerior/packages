@@ -1,11 +1,9 @@
 
-######################################################################
-#                        SYSTEM NERD FONT                            #
-######################################################################
+# ------------------------------------------------------------------------------
+# SYSTEM NERD FONTS
+# ------------------------------------------------------------------------------
 
 cask "font-victor-mono-nerd-font"       # by Rubjo
-
-# NOTE: other good fonts:
 # cask "font-geist-mono-nerd-font"      # by Vercel
 # cask "font-jetbrains-mono-nerd-font"  # by JetBrains
 # cask "font-zed-mono-nerd-font"        # by Zed Industries
@@ -13,113 +11,105 @@ cask "font-victor-mono-nerd-font"       # by Rubjo
 # cask "font-monaspace-nf"              # by GitHub
 
 
-######################################################################
-#                      TERMINAL ENVIRONMENT                          #
-######################################################################
+# ------------------------------------------------------------------------------
+# TERMINAL ENVIRONMENT
+# ------------------------------------------------------------------------------
 
-# terminal emulator app
-cask "ghostty"
+# terminal emulator
+cask "ghostty"          # a cross-platform terminal emulator by Mitchell Hashimoto
 
 # zsh shell and plugins
-brew "zsh"
-brew "starship"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
+brew "zsh"                      # the shell
+brew "starship"                 # cross-shell customizable prompt
+brew "zsh-autosuggestions"      # history-based command completion for zsh shell
+brew "zsh-syntax-highlighting"  # syntax highlighting for zsh shell
 
-# builtin replacements
-brew "zoxide"
-brew "eza"
-brew "bat"
-brew "fd"
-brew "xh"
-brew "ripgrep"
-brew "procs"
+# core tools
+brew "zoxide"           # `cd` replacement
+brew "eza"              # `ls` replacement
+brew "bat"              # `cat` replacement
+brew "fd"               # `find` alternative
+brew "xh"               # `curl` alternative
+brew "ripgrep"          # `grep` replacement
+brew "procs"            # `ps` replacement
+brew "gnupg"            # encryption and signing tool
+brew "stow"             # symlinking manager for dotfiles
+brew "fzf"              # general-purpose fuzzy finder
 
 # utilities
-brew "gnupg"
-brew "ansible"
-brew "stow"
-brew "fzf"
-brew "jq"
-brew "awk"
-brew "mas"
-brew "chafa"
-brew "tlrc"
-brew "ledger"
-brew "hyperfine"
-brew "scc"
-brew "speedtest-cli"
-brew "yt-dlp"
+brew "mas"              # Mac App Store CLI
+brew "jq"               # command-line JSON processor
+brew "awk"              # text processing and data extraction tool
+brew "tlrc"             # simplified TL;DR man pages
+brew "chafa"            # image and video previewer in the terminal
+brew "ledger"           # double-entry accounting system
+brew "hyperfine"        # command-line benchmarking tool
+brew "scc"              # fast lines-of-code counter with complexity metrics
+brew "speedtest-cli"    # internet connection speed test
+brew "yt-dlp"           # video and audio downloader (YouTube and more)
 
 # development
-brew "docker"
-brew "gh"
-brew "git"
-brew "git-delta"
-brew "git-lfs"
-brew "gitleaks"
-brew "fnm"
-brew "go"
+brew "docker"           # containerization platform
+brew "gh"               # GitHub CLI
+brew "git"              # distributed version control system
+brew "git-delta"        # syntax-highlighting pager for git diffs
+brew "git-lfs"          # git extension for versioning large files
+brew "gitleaks"         # secrets scanner for git repositories
+brew "claude-code"      # Claude Code CLI (agentic coding assistant)
+brew "fnm"              # faster `nvm` alternative
+brew "go"               # Go language toolchain
 
-# app plist changes monitoring tool (useful in automating app prefs)
-go "github.com/catilac/plistwatch@latest"
+go "github.com/catilac/plistwatch@latest" # plist changes monitoring tool
 
 
-######################################################################
-#                             NEOVIM                                 #
-######################################################################
+# ------------------------------------------------------------------------------
+# NEOVIM
+# ------------------------------------------------------------------------------
 
-brew "neovim"
-brew "lua"
-brew "luarocks"
-brew "tree-sitter-cli"
+brew "neovim"           # the number one editor for developers
+brew "lua"              # Lua scripting language (used in Neovim config)
+brew "luarocks"         # Lua package manager
+brew "tree-sitter-cli"  # parser generator (used for Neovim syntax highlighting)
 
-######################################################################
-#                          APPLICATIONS                              #
-######################################################################
+# ------------------------------------------------------------------------------
+# APPLICATIONS
+# ------------------------------------------------------------------------------
 
-cask "raycast"
-cask "alt-tab"
-cask "hiddenbar"
-cask "keyclu"
-cask "betterdisplay"
+# my workflow core apps
+cask "raycast"          # Spotlight replacement (and much more...)
+cask "alt-tab"          # alt-tab window switcher
+cask "hiddenbar"        # menu bar customization tool
+cask "todoist-app"      # cross-platform personal task manager
 
-# ai
-cask "claude"
-brew "claude-code"
+# other personal apps
+cask "claude"           # Anthropic's Claude desktop app
+cask "keyclu"           # keyboard shortcuts cheat sheet overlay
+cask "betterdisplay"    # display management and custom resolution utility
+cask "google-chrome"    # standard browser for web dev
+cask "discord"          # communties' comms platform
+cask "telegram"         # messaging app
+cask "steam"            # PC gaming platform
 
-# browsers
-cask "google-chrome"
-
-# notes
-cask "notion"
-
-# task management
-cask "todoist-app"
-cask "linear-linear"
-
-# comms
-cask "discord"
-cask "telegram"
-cask "slack"
-cask "microsoft-teams"
-
-# gaming
-cask "steam"
+# work-specific apps
+cask "notion"           # wiki, notes, and docs
+cask "linear-linear"    # project management tool
+cask "slack"            # team messaging app
+cask "microsoft-teams"  # team meetings app
 
 # Mac App Store apps
-mas "Pages", id: 409201541
-mas "Keynote", id: 409183694
+mas "Pages", id: 409201541        # Apple's word processor app
+mas "Keynote", id: 409183694      # Apple's presentation app
 
-# price tracking Safari extensions
-mas "Keepa - Price Tracker", id: 1533805339
-mas "The Camelizer", id: 1532579087
+# safari extensions
+mas "Keepa - Price Tracker", id: 1533805339   # Amazon price history tracker
+mas "The Camelizer", id: 1532579087           # Amazon price history tracker
 
 
-######################################################################
-#                       VISUAL STUDIO CODE                           #
-######################################################################
+# ------------------------------------------------------------------------------
+# VISUAL STUDIO CODE
+# ------------------------------------------------------------------------------
 
+# the editor
 cask "visual-studio-code"
 
 # vscode extensions
@@ -133,7 +123,7 @@ vscode "ms-azuretools.vscode-containers"    # build, manage, and deploy conteine
 vscode "davidanson.vscode-markdownlint"     # linting for .md files
 vscode "jock.svg"                           # SVG languagge support and previwer
 vscode "kamikillerto.vscode-colorize"       # CSS color highlighting
-vscode "ms-vscode.makefile-tools"           # makefile support 
+vscode "ms-vscode.makefile-tools"           # makefile support
 vscode "redhat.vscode-yaml"                 # YAML language support
 vscode "dbaeumer.vscode-eslint"             # ESlint integration for code linting
 vscode "esbenp.prettier-vscode"             # Prettier integration for code formatting
