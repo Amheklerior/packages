@@ -1,9 +1,10 @@
 # Packages
 
-This repository contains the list of packages and apps I use on MacOS.
+My list of packages to be installed on MacOS via [Homebrew](https://brew.sh/), for my dev setup.
 
-The [Brewfile](./Brewfile) defines all of them in a nice and readable way, including Mac App Store applications and VSCode extensions.
-The whole bundle is going to be installed via [Homebrew](https://brew.sh/).
+> [!IMPORTANT]
+> If you want to keep track of your package list,
+> [fork](https://github.com/Amheklerior/packages/fork) the repo first.
 
 ## Getting Started
 
@@ -18,27 +19,44 @@ export PATH=/opt/homebrew/bin:$PATH
 eval $(/opt/homebrew/bin/brew shellenv zsh)
 ```
 
-Then, download the bundle and launch the installation process:
+Then, download the file and make any desired changes:
 
 ```bash
 # download the Brewfile to ~/Brewfile
 curl -o $HOME/Brewfile https://raw.githubusercontent.com/Amheklerior/packages/HEAD/Brewfile
 
-# and install the whole bundle
-brew bundle --global --verbose
+# edit the file
+vim $HOME/Brewfile
 ```
 
-<!-- [!note]: Once SSH keys are setup, clone this repo and symlink the Brewfile into `XDG_CONFIG_HOME/homebrew` or `$HOME/.homebrew`. -->
-
-## Maintaining the Brewfile
-
-The following commands are useful in keeping things in check.
+Finally, trigger the installation process:
 
 ```bash
-# check how far the current system deviates from the Brewfile's defined list
-# NOTE: the --verbose flag will list the offending items
-brew bundle check --verbose
-
-# uninstall any package which is NOT listed in the Brewfile
-brew bundle cleanup
+# install all the listed packages
+brew bundle --global
 ```
+
+## The Bigger Picture
+
+The [Brewfile](./Brewfile) defines a list of packages to be installed on the system.
+It allows me to declaratively define, in a single place:
+
+- binaries (`brew "xyz"`),
+- cask applications (`cask "xyz"`),
+- _Mac App Store_ specific apps (`mas "xyz"`),
+- _Go_ tools (`go "xyz"`),
+- _VS Code_ extentions (`vscode "xyz"`).
+
+It is used as part of my [System Environment Setup](https://github.com/Amheklerior/sysenv)
+for quickly setting up new machines.
+
+> [!TIP]
+>
+> ```bash
+> # check how far the current system deviates from the Brewfile's defined list
+> # NOTE: the --verbose flag will list all offending items
+> brew bundle check --verbose
+> 
+> # uninstall any package which is NOT listed in the Brewfile
+> brew bundle cleanup
+> ```
