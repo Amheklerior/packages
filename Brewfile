@@ -38,6 +38,7 @@ brew "fzf"              # general-purpose fuzzy finder
 
 # utilities
 brew "mas"              # Mac App Store CLI
+brew "xan"              # command-line CSV processor and explorer
 brew "jq"               # command-line JSON processor
 brew "awk"              # text processing and data extraction tool
 brew "tlrc"             # simplified TL;DR man pages
