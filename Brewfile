@@ -23,6 +23,7 @@ brew "zsh"                      # the shell
 brew "starship"                 # cross-shell customizable prompt
 brew "zsh-autosuggestions"      # history-based command completion for zsh shell
 brew "zsh-syntax-highlighting"  # syntax highlighting for zsh shell
+brew "sheeki03/tap/tirith"      # shell security layer that intercepts suspicious commands
 
 # core tools
 brew "zoxide"           # `cd` replacement
