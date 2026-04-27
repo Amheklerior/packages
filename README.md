@@ -60,3 +60,9 @@ for quickly setting up new machines.
 > # uninstall any package which is NOT listed in the Brewfile
 > brew bundle cleanup
 > ```
+
+## License
+
+Licensed under [MIT](LICENCE) © Andrea Amato 2026
+
+_For information, see [TLDR Legal / MIT](https://www.tldrlegal.com/license/mit-license)_
