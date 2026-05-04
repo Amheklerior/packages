@@ -57,7 +57,6 @@ brew "git"              # distributed version control system
 brew "git-delta"        # syntax-highlighting pager for git diffs
 brew "git-lfs"          # git extension for versioning large files
 brew "gitleaks"         # secrets scanner for git repositories
-brew "claude-code"      # Claude Code CLI (agentic coding assistant)
 brew "fnm"              # faster `nvm` alternative
 brew "go"               # Go language toolchain
 
@@ -85,6 +84,7 @@ cask "todoist-app"      # cross-platform personal task manager
 
 # other personal apps
 cask "claude"           # Anthropic's Claude desktop app
+cask "claude-code"      # Claude Code CLI (agentic coding assistant)
 cask "keyclu"           # keyboard shortcuts cheat sheet overlay
 cask "betterdisplay"    # display management and custom resolution utility
 cask "google-chrome"    # standard browser for web dev
@@ -94,13 +94,12 @@ cask "steam"            # PC gaming platform
 
 # work-specific apps
 cask "notion"           # wiki, notes, and docs
-cask "linear-linear"    # project management tool
+cask "linear"           # project management tool
 cask "slack"            # team messaging app
 cask "microsoft-teams"  # team meetings app
 
 # Mac App Store apps
-mas "Pages", id: 409201541        # Apple's word processor app
-mas "Keynote", id: 409183694      # Apple's presentation app
+mas "Pages", id: 361309726        # Apple's word processor app
 
 # safari extensions
 mas "Keepa - Price Tracker", id: 1533805339   # Amazon price history tracker
