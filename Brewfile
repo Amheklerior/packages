@@ -60,7 +60,7 @@ brew "gitleaks"         # secrets scanner for git repositories
 brew "fnm"              # faster `nvm` alternative
 brew "go"               # Go language toolchain
 
-go "github.com/catilac/plistwatch@latest" # plist changes monitoring tool
+go "github.com/catilac/plistwatch" # plist changes monitoring tool
 
 
 # ------------------------------------------------------------------------------
