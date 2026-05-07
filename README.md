@@ -63,6 +63,6 @@ for quickly setting up new machines.
 
 ## License
 
-Licensed under [MIT](LICENCE) © Andrea Amato 2026
+Licensed under [MIT](LICENSE) © Andrea Amato 2026
 
 _For information, see [TLDR Legal / MIT](https://www.tldrlegal.com/license/mit-license)_
