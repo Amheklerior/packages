@@ -51,7 +51,6 @@ brew "speedtest-cli"    # internet connection speed test
 brew "yt-dlp"           # video and audio downloader (YouTube and more)
 
 # development
-brew "docker"           # containerization platform
 brew "gh"               # GitHub CLI
 brew "git"              # distributed version control system
 brew "git-delta"        # syntax-highlighting pager for git diffs
@@ -93,10 +92,14 @@ cask "telegram"         # messaging app
 cask "steam"            # PC gaming platform
 
 # work-specific apps
-cask "notion"           # wiki, notes, and docs
-cask "linear"           # project management tool
-cask "slack"            # team messaging app
-cask "microsoft-teams"  # team meetings app
+cask "notion"                   # wiki, notes, and docs
+cask "linear"                   # project management tool
+cask "slack"                    # team messaging app
+cask "microsoft-teams"          # team meetings app
+cask "pritunl"                  # OpenVPN client
+cask "dbngin"                   # DB-servers manager (to start/stop DB servers locally)
+cask "sequel-ace"               # DB management tool
+cask "unifi-identity-endpoint"  # office door and wifi authentication app
 
 # Mac App Store apps
 mas "Pages", id: 361309726        # Apple's word processor app
